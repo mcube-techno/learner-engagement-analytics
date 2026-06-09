@@ -1,20 +1,38 @@
-# Learner Engagement & Outcomes Analysis
+# Programme Health Intelligence: A Learning Analytics Case Study
 
-End-to-end learning analytics project using SQL, Python, and Power BI to analyse learner engagement, completion rates, and outcome patterns across the Open University Learning Analytics Dataset (OULAD) — identifying the key factors that influence learner success and translating data into actionable insights.
+End-to-end learning analytics project using SQL, Python, and Power BI to analyse learner engagement, completion rates, and outcome patterns across the Open University Learning Analytics Dataset (OULAD) — identifying the key factors that influence learner success and translating data into actionable decisions for learning operations teams.
 
 ---
 
-## Project Objective
+## Background
 
-This project explores what the data tells us about learner behaviour in online education — when students engage, when they disengage, how assessment performance relates to final outcomes, and which combinations of factors are most associated with withdrawal or failure.
+Online education providers face a persistent operational challenge: by the time a learner's struggle becomes visible, it is often too late to intervene effectively. Assessment failures, disengagement, and withdrawal are rarely sudden — they leave signals in the data long before they become outcomes.
 
-The goal is to demonstrate a full data analysis workflow: from raw data ingestion and cleaning, through exploratory analysis and SQL querying, to a structured Power BI dashboard that communicates findings clearly to a non-technical audience.
+This project approaches that challenge from an operator's perspective. Rather than asking *"what predicts student success?"* as an academic exercise, it asks the questions a Head of Learning Operations would actually need answered:
+
+- At what point in a programme do learners begin to disengage — and is there a consistent pattern?
+- Which course modules are generating the most disengagement?
+- How early can assessment data signal a learner at risk of withdrawal?
+- Are certain demographic groups withdrawing at disproportionate rates, and what does that mean for enrolment and support strategy?
+- What does a healthy programme look like in data terms — and which of our programmes fall short of that benchmark?
+
+The goal is not just to analyse data but to produce insights that a non-technical stakeholder — a programme manager, a head of learning, an operations director — can act on.
+
+---
+
+## Fictional Business Scenario
+
+**Client:** Head of Learning Operations at a mid-scale online education provider  
+**Responsibility:** Academic programme performance and operational course health across multiple modules and student cohorts  
+**Brief:** *"We have data on how our learners are behaving across every module. We need to understand what it's telling us, where our programmes are healthy, where they are not, and what we should do about it."*
+
+This scenario is modelled on a realistic brief that would be given to a data analyst in an EdTech, higher education, or corporate L&D environment.
 
 ---
 
 ## Dataset
 
-**Open University Learning Analytics Dataset (OULAD)**
+**Open University Learning Analytics Dataset (OULAD)**  
 Publicly available at: [https://analyse.kmi.open.ac.uk/open_dataset](https://analyse.kmi.open.ac.uk/open_dataset)
 
 The dataset covers 22 courses, 32,593 students, and spans multiple academic years. It contains anonymised data on student demographics, registration, assessment scores, virtual learning environment (VLE) interactions, and final outcomes.
@@ -61,14 +79,14 @@ The dataset covers 22 courses, 32,593 students, and spans multiple academic year
 │   ├── withdrawal_by_demographic.sql    # Withdrawal rates by group
 │   └── student_activity_ranking.sql     # Rank students by activity level
 ├── dashboard/
-│   └── learner_engagement_dashboard.pbix  # Power BI dashboard file
+│   └── programme_health_dashboard.pbix  # Power BI dashboard file
 ├── images/
 │   └── dashboard_screenshot.png         # Dashboard preview for README
 ├── reports/
 │   ├── Business_Requirements_Document.md
-│   └── findings_summary.md              # Key insights and recommendations
+│   └── findings_and_recommendations.md  # Key insights and actionable recommendations
 ├── presentation/
-│   └── project_summary.pdf              # One-page recruiter-friendly summary
+│   └── project_summary.pdf              # One-page stakeholder-friendly summary
 ├── .gitignore
 └── README.md
 ```
@@ -77,17 +95,23 @@ The dataset covers 22 courses, 32,593 students, and spans multiple academic year
 
 ## Analysis Questions
 
-Each notebook addresses a specific analytical question:
+Each notebook addresses a specific business question, not just a technical one:
 
-1. **Student Overview** — What are the overall pass, fail, and withdrawal rates across courses and demographic groups?
-2. **Engagement Analysis** — How does VLE interaction (clicks) correlate with final outcomes?
-3. **Dropout Timing** — At what point in a programme do students typically disengage or withdraw?
-4. **Assessment Performance** — How strongly do assessment scores predict final results?
-5. **At-Risk Identification** — Which combination of factors is most associated with poor outcomes?
+1. **Student Overview** — What do pass, fail, and withdrawal rates look like across courses and demographic groups? Where are the concentration points?
+2. **Engagement Analysis** — How does VLE interaction correlate with final outcomes? Is there a minimum engagement threshold below which failure becomes likely?
+3. **Dropout Timing** — At what point in a programme do students typically disengage or withdraw? Is there a critical window for intervention?
+4. **Assessment Performance** — How strongly do early assessment scores predict final results? How much warning does the data give us?
+5. **At-Risk Identification** — Which combination of factors — engagement, demographics, assessment scores — is most associated with poor outcomes?
 
 ---
 
-## Key Findings
+## Approach
+
+What distinguishes this analysis is the operator's lens applied throughout. Every chart, query, and finding is framed around a decision a learning operations team would need to make — not around demonstrating technical technique for its own sake. Findings are followed by specific, actionable recommendations grounded in the realities of running online programmes at scale.
+
+---
+
+## Key Findings & Recommendations
 
 *To be updated as analysis is completed.*
 
@@ -121,15 +145,16 @@ Each notebook addresses a specific analytical question:
 
 | Component | Status |
 |---|---|
+| Business Requirements Document | ✅ Complete |
 | Data ingestion & cleaning | 🔄 In progress |
 | Exploratory analysis | 🔄 In progress |
 | SQL queries | 🔄 In progress |
 | Power BI dashboard | ⏳ Pending |
-| Final report | ⏳ Pending |
+| Findings & recommendations report | ⏳ Pending |
 
 ---
 
 ## Author
 
-**Megha Sinha**
+**Megha Sinha**  
 [LinkedIn](https://www.linkedin.com/in/megha-sinha-0a3a1a26a/) | mail2megha.tech@gmail.com
