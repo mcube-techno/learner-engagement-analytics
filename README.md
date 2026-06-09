@@ -138,7 +138,8 @@ What distinguishes this analysis is the operator's lens applied throughout. Ever
    ```
 
 3. Place the raw OULAD CSV files in `data/raw/`
-
+   > **Note:** `studentVle.csv` (454MB, 10.6M rows) is excluded from this repository due to its size. It must be downloaded directly from the OULAD website and placed in `data/raw/` before running the notebooks. All other files are available in `data/raw/` within this repo. A stratified 10% sample of `studentVle.csv` is available in `data/processed/studentVle_sampled.csv` and is what the notebooks use by default.
+   
 4. Run notebooks in order, starting with `01_student_overview.ipynb`
 
 ---
