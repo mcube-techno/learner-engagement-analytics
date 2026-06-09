@@ -35,17 +35,19 @@ This scenario is modelled on a realistic brief that would be given to a data ana
 **Open University Learning Analytics Dataset (OULAD)**  
 Publicly available at: [https://analyse.kmi.open.ac.uk/open_dataset](https://analyse.kmi.open.ac.uk/open_dataset)
 
-The dataset covers 22 courses, 32,593 students, and spans multiple academic years. It contains anonymised data on student demographics, registration, assessment scores, virtual learning environment (VLE) interactions, and final outcomes.
+The dataset covers 7 unique modules across 22 module-presentation combinations, 32,593 enrolment records (28,785 unique students), and spans two academic years (2013–2014). It contains anonymised data on student demographics, registration, assessment scores, virtual learning environment (VLE) interactions, and final outcomes.
 
-| File | Description |
-|---|---|
-| `studentInfo.csv` | Student demographics and final results |
-| `studentRegistration.csv` | Registration and withdrawal dates |
-| `studentAssessment.csv` | Assessment scores per student |
-| `assessments.csv` | Assessment types, weights, and deadlines |
-| `studentVle.csv` | Daily clicks on learning materials |
-| `vle.csv` | VLE activity types and classifications |
-| `courses.csv` | Course length and module information |
+> **Note on student count:** Students who studied more than one module appear more than once in the dataset. 32,593 is the enrolment count; 28,785 is the unique student count. Both figures are used in the analysis depending on context.
+
+| File | Rows | Description |
+|---|---|---|
+| `studentInfo.csv` | 32,593 | Student demographics and final results |
+| `studentRegistration.csv` | 32,593 | Registration and withdrawal dates |
+| `studentAssessment.csv` | 173,912 | Assessment scores per student |
+| `assessments.csv` | 206 | Assessment types, weights, and deadlines |
+| `studentVle.csv` | 10,655,280 | Daily clicks on learning materials |
+| `vle.csv` | 6,364 | VLE activity types and classifications |
+| `courses.csv` | 22 | Course length and module information |
 
 ---
 
