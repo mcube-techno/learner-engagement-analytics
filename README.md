@@ -103,7 +103,7 @@ Each notebook addresses a specific analytical question:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/learner-engagement-analysis.git
+   git clone https://github.com/mcube-techno/learner-engagement-analysis.git
    ```
 
 2. Install dependencies:
