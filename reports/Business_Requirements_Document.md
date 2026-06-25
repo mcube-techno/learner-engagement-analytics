@@ -197,8 +197,8 @@ These issues were identified during initial data scanning and are documented her
 | Phase | Activity | Status |
 |---|---|---|
 | Phase 1 | Business Requirements Document | ✅ Complete |
-| Phase 2 | Data ingestion, cleaning & preparation | 🔄 In progress |
-| Phase 3 | Exploratory analysis (Notebooks 1–5) | ⏳ Pending |
+| Phase 2 | Data ingestion, cleaning & preparation | ✅ Complete |
+| Phase 3 | Exploratory analysis (Notebooks 1–5) | ✅ Complete |
 | Phase 4 | SQL query development | ⏳ Pending |
 | Phase 5 | Power BI dashboard build | ⏳ Pending |
 | Phase 6 | Findings & recommendations report | ⏳ Pending |
