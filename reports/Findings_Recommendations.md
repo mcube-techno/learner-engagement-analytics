@@ -346,6 +346,14 @@ making it the most actionable group for targeted intervention.
 
 ---
 
+### Finding 23 — Demographic Correlations with Withdrawal (Correlational Only)
+Certain demographic combinations show higher withdrawal rates — notably
+younger students (0–35), male, in the most deprived IMD bands (0–10%).
+The highest withdrawal rate group (41.5%) is male, 0–35, 0–10% IMD.
+These patterns are correlational — not causal. Socioeconomic pressures,
+access to support, and module choice may all contribute. Further
+qualitative research is needed before drawing conclusions about causation.
+
 *This report was produced as part of a personal data analytics portfolio
 project. The business scenario is fictional but modelled on realistic
 operational requirements in online education and EdTech environments.*
