@@ -83,6 +83,9 @@ The dataset covers 7 unique modules across 22 module-presentation combinations, 
 │   └── student_activity_ranking.sql     # Rank students by activity level (window functions)
 ├── dashboard/
 │   └── programme_health_dashboard.pbix  # Power BI dashboard — 3 pages
+│   ├── dashboard_page1_overview.png
+│   ├── dashboard_page2_engagement.png
+│   ├── dashboard_page3_atrisk.png
 ├── images/
 │   ├── 01-13_*.png                      # Chart outputs from notebooks
 │   └── dashboard_screenshot.png         # Dashboard preview for README
@@ -90,10 +93,6 @@ The dataset covers 7 unique modules across 22 module-presentation combinations, 
 │   ├── Business_Requirements_Document.md
 │   └── findings_and_recommendations.md  # 23 findings, operational recommendations
 │   └── project_summary.pdf              # One-page stakeholder-friendly summary
-├── presentation/
-│   ├── dashboard_page1_overview.png
-│   ├── dashboard_page2_engagement.png
-│   ├── dashboard_page3_atrisk.png
 ├── .gitignore
 └── README.md
 ```
