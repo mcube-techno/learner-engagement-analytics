@@ -74,21 +74,26 @@ The dataset covers 7 unique modules across 22 module-presentation combinations, 
 │   ├── 02_engagement_analysis.ipynb     # VLE engagement vs outcomes
 │   ├── 03_dropout_timing.ipynb          # When and why students withdraw
 │   ├── 04_assessment_performance.ipynb  # Assessment scores vs final results
-│   └── 05_at_risk_identification.ipynb  # Combined at-risk pattern analysis
+│   ├── 05_at_risk_identification.ipynb  # Combined at-risk pattern analysis
+│   └── 06_sql_queries.ipynb             # SQL queries against SQLite
 ├── sql/
 │   ├── engagement_summary.sql           # Aggregate engagement by module
 │   ├── assessment_thresholds.sql        # Flag students below score threshold
 │   ├── withdrawal_by_demographic.sql    # Withdrawal rates by group
-│   └── student_activity_ranking.sql     # Rank students by activity level
+│   └── student_activity_ranking.sql     # Rank students by activity level (window functions)
 ├── dashboard/
-│   └── programme_health_dashboard.pbix  # Power BI dashboard file
+│   └── programme_health_dashboard.pbix  # Power BI dashboard — 3 pages
 ├── images/
+│   ├── 01-13_*.png                      # Chart outputs from notebooks
 │   └── dashboard_screenshot.png         # Dashboard preview for README
 ├── reports/
 │   ├── Business_Requirements_Document.md
-│   └── findings_and_recommendations.md  # Key insights and actionable recommendations
-├── presentation/
+│   └── findings_and_recommendations.md  # 23 findings, operational recommendations
 │   └── project_summary.pdf              # One-page stakeholder-friendly summary
+├── presentation/
+│   ├── dashboard_page1_overview.png
+│   ├── dashboard_page2_engagement.png
+│   ├── dashboard_page3_atrisk.png
 ├── .gitignore
 └── README.md
 ```
@@ -115,13 +120,34 @@ What distinguishes this analysis is the operator's lens applied throughout. Ever
 
 ## Key Findings & Recommendations
 
-*To be updated as analysis is completed.*
+The full findings report — 23 findings spanning programme performance, engagement,
+dropout timing, assessment prediction, and the at-risk framework — is available in
+[`reports/findings_and_recommendations.md`](reports/findings_and_recommendations.md).
+
+**Headline finding:** 52.8% of enrolments do not result in a successful outcome.
+A three-signal at-risk framework (engagement, assessment score, submission timing)
+identifies students with a 98.7% fail/withdrawal rate at Critical Risk versus an
+83.6% success rate at Low Risk — an 82 percentage point gap confirming the
+framework is operationally reliable.
 
 ---
 
 ## Dashboard Preview
 
-*Screenshot to be added once Power BI dashboard is complete.*
+The Power BI dashboard consists of 3 pages, each addressing a different layer of the analysis:
+
+**Page 1 — Programme Health Overview**
+KPI cards for total enrolments, pass/fail/withdrawal/distinction rates, an outcome distribution chart, and withdrawal rate by module — filterable by module.
+
+**Page 2 — Engagement & Assessment Analysis**
+Success rate by engagement band, score band, and submission behaviour — showing exactly where the data-driven intervention thresholds lie.
+
+**Page 3 — At-Risk Framework**
+The combined three-signal at-risk framework in action — risk category distribution, success rate by risk category, and at-risk profile by module — filterable by module and risk category.
+
+![Programme Health Overview](images/dashboard_screenshot.png)
+
+*Additional page screenshots available in `presentation/`.*
 
 ---
 
@@ -149,11 +175,12 @@ What distinguishes this analysis is the operator's lens applied throughout. Ever
 | Component | Status |
 |---|---|
 | Business Requirements Document | ✅ Complete |
-| Data ingestion & cleaning | 🔄 In progress |
-| Exploratory analysis | 🔄 In progress |
-| SQL queries | 🔄 In progress |
-| Power BI dashboard | ⏳ Pending |
-| Findings & recommendations report | ⏳ Pending |
+| Data ingestion & cleaning | ✅ Complete |
+| Exploratory analysis (Notebooks 1–5) | ✅ Complete |
+| SQL queries | ✅ Complete |
+| Power BI dashboard (3 pages) | ✅ Complete |
+| Findings & recommendations report | ✅ Complete |
+| Stakeholder summary PDF | ✅ Complete |
 
 ---
 
