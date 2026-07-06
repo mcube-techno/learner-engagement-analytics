@@ -35,6 +35,11 @@ This scenario is modelled on a realistic brief that would be given to a data ana
 **Open University Learning Analytics Dataset (OULAD)**  
 Publicly available at: [https://analyse.kmi.open.ac.uk/open_dataset](https://analyse.kmi.open.ac.uk/open_dataset)
 
+**Citation:** Kuzilek J., Hlosta M., Zdrahal Z. Open University Learning Analytics 
+dataset. Sci. Data 4:170171 doi: 10.1038/sdata.2017.171 (2017).
+
+**Licence:** This project uses data released under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 The dataset covers 7 unique modules across 22 module-presentation combinations, 32,593 enrolment records (28,785 unique students), and spans two academic years (2013–2014). It contains anonymised data on student demographics, registration, assessment scores, virtual learning environment (VLE) interactions, and final outcomes.
 
 > **Note on student count:** Students who studied more than one module appear more than once in the dataset. 32,593 is the enrolment count; 28,785 is the unique student count. Both figures are used in the analysis depending on context.
